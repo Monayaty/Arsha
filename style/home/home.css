@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif; }
+
+/*Section Title General*/
+.sectionTitle {
+  text-align: center;
+  padding-bottom: 30px; }
+  .sectionTitle h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e; }
+    .sectionTitle h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #ddd;
+      bottom: 1px;
+      left: calc(50% - 60px); }
+    .sectionTitle h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #47b2e4;
+      bottom: 0;
+      left: calc(50% - 20px); }
+  .sectionTitle p {
+    margin-bottom: 0; }
+
+/*Common Button*/
+.commonBtn {
+  background-color: #47b2e4;
+  padding: 1%;
+  border-radius: 10px; }
+
+/*Team*/
+.team {
+  background-color: #f7f5f5; }
+  .team .card .personInfo h4 {
+    color: #37517e;
+    font-weight: bold; }
+  .team .card .personInfo span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative; }
+    .team .card .personInfo span::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 1px;
+      background: #cbd6e9;
+      bottom: 0;
+      left: 0; }
+  .team .card .personInfo ul li i {
+    color: #37517e; }
+    .team .card .personInfo ul li i:hover {
+      cursor: pointer; }
+
+/*Pricing*/
+.pricing .box {
+  box-shadow: 4px 4px 4px rgba(20, 45, 100, 0.1);
+  -webkit-box-shadow: 4px 4px 4px rgba(20, 45, 100, 0.1);
+  -moz-box-shadow: 4px 4px 4px rgba(20, 45, 100, 0.1); }
+  .pricing .box h3, .pricing .box h4 {
+    color: #37517e;
+    font-weight: bold; }
+  .pricing .box h5 {
+    color: #47b2e4; }
+  .pricing .box ul li span {
+    text-decoration: line-through; }
+  .pricing .box button {
+    background-color: #fff;
+    border: 2px solid #47b2e4;
+    outline: 0;
+    padding: 4%;
+    color: #47b2e4;
+    font-weight: bold; }
+.pricing .bowTwo {
+  border-top: 3px solid #47b2e4; }
+  .pricing .bowTwo .bowTwoBtn {
+    background-color: #47b2e4;
+    color: white; }
+
+/*faq*/
+.faq {
+  background-color: #f7f5f5; }
+  .faq .fa-question-circle {
+    color: #47b2e4;
+    font-size: 1.4rem; }
+  .faq .fa-chevron-down {
+    font-size: 1.4rem; }
+
+/*Contact*/
+.contact ul {
+  border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #47b2e4; }
+.contact .listContent h5 {
+  color: #37517e;
+  font-weight: bold; }
+.contact .listContent .fa-map-marker-alt, .contact .listContent .fa-envelope, .contact .listContent .fa-phone-alt {
+  color: #47b2e4;
+  font-size: 1.2rem; }
+.contact .formPage form {
+  border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #47b2e4; }
+  .contact .formPage form button {
+    background-color: #47b2e4;
+    border: none;
+    outline: 0;
+    padding: 3%;
+    color: white; }
+
+/*Newsletter*/
+.newsletter h2 {
+  color: #37517e; }
+.newsletter #addon-wrapping {
+  background-color: #47b2e4;
+  border: none;
+  outline: 0;
+  padding: 3%;
+  color: white; }
+
+/*# sourceMappingURL=home.css.map */

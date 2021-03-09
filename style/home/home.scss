@@ -1,0 +1,209 @@
+$mainBlueColor: #37517e;
+$secondaryBluecolor: #47b2e4;
+
+* {
+padding : 0;
+margin : 0;
+box-sizing : border-box;
+font-family: 'Public Sans', sans-serif;
+}
+
+/*Section Title General*/
+.sectionTitle {
+    text-align: center;
+    padding-bottom: 30px;
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: $mainBlueColor;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: $secondaryBluecolor;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+/*Common Button*/
+.commonBtn {
+    background-color: $secondaryBluecolor;
+    padding: 1%;
+    border-radius: 10px;
+}
+@mixin BoxShadow ($HrShadow,$VrShadow,$Blur,$rgba) {
+    box-shadow: $HrShadow $VrShadow $Blur $rgba;
+    -webkit-box-shadow: $HrShadow $VrShadow $Blur $rgba;
+    -moz-box-shadow: $HrShadow $VrShadow $Blur $rgba;
+}
+// Header
+#header
+{
+  .brand
+  {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  a
+  {
+
+  }
+  .nav-color
+  {
+    background-color: $secondaryBluecolor;
+  }
+}
+//section
+.section-bg {
+  background-color: #f3f5fa;
+}
+/*Team*/
+.team {
+    background-color: rgb(247, 245, 245);
+    .card {
+        .personInfo {
+            h4 {
+                color: $mainBlueColor;
+                font-weight: bold;
+            }
+            span {
+                display: block;
+                font-size: 15px;
+                padding-bottom: 10px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 50px;
+                    height: 1px;
+                    background: #cbd6e9;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            ul {
+                li {
+                    i {
+                        color: $mainBlueColor;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} /*Pricing*/
+.pricing {
+    .box {
+        @include BoxShadow(4px, 4px, 4px,rgba(20, 45, 100, 0.1));
+        h3 , h4{
+            color: $mainBlueColor;
+            font-weight: bold;
+        }
+        h5 {
+            color: $secondaryBluecolor;
+        }
+        ul {
+            li {
+                span {
+                    text-decoration: line-through;
+                }
+            }
+        }
+        button {
+            background-color: #fff;
+            border: 2px solid $secondaryBluecolor;
+            outline: 0;
+            padding: 4%;
+            color: $secondaryBluecolor;
+            font-weight: bold;
+        }
+    }
+    .bowTwo {
+        border-top: 3px solid $secondaryBluecolor;
+        .bowTwoBtn {
+            background-color: $secondaryBluecolor;
+            color: white;
+        }
+    }
+}
+/*faq*/
+.faq {
+    background-color: rgb(247, 245, 245);
+    .fa-question-circle {
+        color: $secondaryBluecolor;
+        font-size: 1.4rem;
+    }
+    .fa-chevron-down {
+        font-size: 1.4rem;
+    }
+}
+/*Contact*/
+.contact {
+    ul {
+        border-top: 3px solid $secondaryBluecolor;
+        border-bottom: 3px solid $secondaryBluecolor;
+    }
+    .listContent {
+        h5 {
+            color: $mainBlueColor;
+            font-weight: bold;
+        }
+        .fa-map-marker-alt , .fa-envelope , .fa-phone-alt {
+            color: $secondaryBluecolor;
+            font-size: 1.2rem;
+        }
+    }
+    .formPage {
+        form {
+            border-top: 3px solid $secondaryBluecolor;
+            border-bottom: 3px solid $secondaryBluecolor;
+            button {
+                background-color:$secondaryBluecolor;
+                border: none;
+                outline: 0;
+                padding: 3%;
+                color: white;
+            }
+        }
+    }
+} /*Newsletter*/
+.newsletter {
+    h2 {
+        color: $mainBlueColor;
+    }
+    #addon-wrapping {
+        background-color:$secondaryBluecolor;
+        border: none;
+        outline: 0;
+        padding: 3%;
+        color: white;
+    }
+}
